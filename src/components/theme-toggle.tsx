@@ -8,7 +8,7 @@ export function ThemeToggle() {
 
   return (
     <button
-      className="relative inline-flex"
+      className="flex items-center gap-2 px-4 py-2 font-medium border rounded-md border-neutral-100 dark:border-neutral-800"
       onClick={() => setTheme(theme === "light" ? "dark" : "light")}
     >
       <Sun
