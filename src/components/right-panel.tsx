@@ -1,7 +1,9 @@
 import { bentoBoxes } from "@/config/site-config";
 import React from "react";
-import Social from "./grid-items/social";
 import GridItem from "./grid-items/grid-item";
+import ProfileBox from "./grid-items/profile-box";
+import SocialBox12 from "./grid-items/social-box-12";
+import SocialBox21 from "./grid-items/social-box-21";
 
 const RightPanel = () => {
   return (
@@ -12,10 +14,14 @@ const RightPanel = () => {
       {bentoBoxes.map((item, index) => {
         return (
           <GridItem key={item.type + index} size={item.layout}>
-            {item.type === "social" ? (
-              <Social item={item} />
+            {item.type === "profile" ? (
+              <ProfileBox item={item} />
+            ) : item.type === "social12" ? (
+              <SocialBox12 item={item} />
+            ) : item.type === "social21" ? (
+              <SocialBox21 item={item} />
             ) : (
-              <div>xfefwsef s</div>
+              <div>Unknown item</div>
             )}
           </GridItem>
         );

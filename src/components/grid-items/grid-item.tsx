@@ -3,13 +3,13 @@ import { cva, type VariantProps } from "class-variance-authority";
 import { cn } from "@/utils/cn";
 
 const variants = cva(
-  "shadow-grid rounded-3xl bg-white dark:bg-neutral-900 flex flex-col justify-center @container",
+  "shadow-grid rounded-2xl bg-white dark:bg-neutral-900 flex flex-col justify-center @container",
   {
     variants: {
       size: {
-        "1x2": "md:col-span-1 col-span-2 row-span-2 ",
-        "2x1": "md:col-span-2 col-span-full row-span-1 ",
-        "2x2": "md:col-span-2 col-span-full row-span-2 ",
+        "1x2": "md:col-span-1 col-span-2 row-span-2 p-6",
+        "2x1": "md:col-span-2 col-span-full row-span-1 p-6",
+        "2x2": "md:col-span-2 col-span-full row-span-2 p-6 ",
         "2x4":
           "md:col-span-2 col-span-full row-span-4 relative overflow-hidden",
       },

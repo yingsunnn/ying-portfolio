@@ -38,21 +38,12 @@ const LeftPanel = () => {
           </p>
         </div>
 
-        <div className="flex items-center gap-3 mt-6">
-          <a
-            href={`${profileConfig.locationLink}`}
-            className="flex items-center w-full gap-2 px-4 py-2 text-sm font-medium border rounded-md border-neutral-100 dark:border-neutral-800"
-          >
+        <div className="flex items-center justify-between gap-3 mt-3">
+          <div className="flex flex-row items-center gap-2">
             <MapPin size="14" />
             {profileConfig.location}
-          </a>
-          <a
-            href={`mailto:${profileConfig.email}`}
-            className="flex items-center w-full gap-2 px-4 py-2 text-sm font-medium border rounded-md border-neutral-100 dark:border-neutral-800"
-          >
-            <Mail size="14" />
-            Contact Me
-          </a>
+          </div>
+
           <ThemeToggle />
         </div>
         {/* Footer */}
