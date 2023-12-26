@@ -1,7 +1,12 @@
 import { LucideIcon, Mail, QrCode } from "lucide-react";
 
-export type GridItemLayout = "1x2" | "2x1" | "2x2" | "2x4"; // First number is width, second is height
-export type GridItemType = "social12" | "social21" | "project" | "profile" | "skills";
+export type GridItemLayout = "1x2" | "2x1" | "2x2" | "2x4" | "2x6"; // First number is width, second is height
+export type GridItemType =
+  | "social12"
+  | "social21"
+  | "project"
+  | "profile"
+  | "skills";
 
 export interface SkillCategory {
   subtitle: string;
@@ -11,7 +16,7 @@ export interface SkillCategory {
 export interface GridItemInterface {
   layout: GridItemLayout;
   type: GridItemType;
-  title?: string;
+  title: string;
   description?: string;
   icon?: string;
   social?: {
@@ -94,17 +99,16 @@ export const bentoBoxes: GridItemInterface[] = [
     layout: "2x4",
     type: "skills",
     title: "Skills",
-    skills: 
-    [
+    skills: [
       {
         subtitle: "Frontend",
-        items:["Ract", "Typescript"],
+        items: ["Ract", "Typescript"],
       },
       {
         subtitle: "Backend",
-        items:["Spring"],
+        items: ["Spring"],
       },
-    ]
+    ],
   },
   {
     layout: "2x1",
@@ -122,11 +126,22 @@ export const bentoBoxes: GridItemInterface[] = [
     },
   },
   {
-    layout: "2x4",
+    layout: "2x6",
     type: "project",
+    title: "AI Note",
+    icon: "/ai-chatbot.jpg",
+    description: " aiais daksd flkasnmf lkasdnf lksn"
+  },
+  {
+    layout: "2x6",
+    type: "project",
+    title: "AI AssA",
+    icon: "/ai-assa.jpg",
+    description: "sdfsd sd sd fsd fsd sd fsd "
   },
   {
     layout: "2x4",
     type: "project",
+    title: "",
   },
 ];

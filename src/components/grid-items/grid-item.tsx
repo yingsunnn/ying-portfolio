@@ -11,7 +11,8 @@ const variants = cva(
         "2x1": "md:col-span-2 col-span-full row-span-1 p-6",
         "2x2": "md:col-span-2 col-span-full row-span-2 p-6",
         "2x4":
-          "md:col-span-2 col-span-full row-span-4 relative overflow-hidden p-6",
+          "md:col-span-2 col-span-full row-span-4 relative overflow-hidden",
+        "2x6": "md:col-span-2 col-span-full row-span-6 relative overflow-hidden"
       },
     },
     defaultVariants: {

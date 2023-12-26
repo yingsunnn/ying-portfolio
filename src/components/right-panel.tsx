@@ -5,12 +5,13 @@ import ProfileBox from "./grid-items/profile-box";
 import SocialBox12 from "./grid-items/social-box-12";
 import SocialBox21 from "./grid-items/social-box-21";
 import SkillsBox from "./grid-items/skills-box";
+import ProjectBox from "./grid-items/project-box";
 
 const RightPanel = () => {
   return (
     <div
       // ref={scope}
-      className="grid w-full grid-cols-4 gap-5 py-5 xl:px-1 xl:overflow-y-auto auto-rows-[76px]"
+      className="grid w-full grid-cols-4 gap-5 py-5 xl:px-1 auto-rows-[76px]"
     >
       {bentoBoxes.map((item, index) => {
         return (
@@ -23,6 +24,8 @@ const RightPanel = () => {
               <SocialBox21 item={item} />
             ) : item.type === "skills" ? (
               <SkillsBox item={item} />
+            ) : item.type === "project" ? (
+              <ProjectBox item={item} />
             ) : (
               <div>Unknown item</div>
             )}

@@ -3,7 +3,7 @@ import React from 'react'
 
 const SkillsBox = ({ item }: { item: GridItemInterface }) => {
   return (
-    <div className="flex flex-col h-full w-full">
+    <div className="flex flex-col h-full w-full m-6">
       <div className="text-lg font-semibold line-clamp-1">{item.title}</div>
       <div className="mt-4">
         {item.skills?.map((skill, index) => (
