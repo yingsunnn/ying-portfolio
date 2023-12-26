@@ -9,9 +9,9 @@ const variants = cva(
       size: {
         "1x2": "md:col-span-1 col-span-2 row-span-2 p-6",
         "2x1": "md:col-span-2 col-span-full row-span-1 p-6",
-        "2x2": "md:col-span-2 col-span-full row-span-2 p-6 ",
+        "2x2": "md:col-span-2 col-span-full row-span-2 p-6",
         "2x4":
-          "md:col-span-2 col-span-full row-span-4 relative overflow-hidden",
+          "md:col-span-2 col-span-full row-span-4 relative overflow-hidden p-6",
       },
     },
     defaultVariants: {

@@ -4,6 +4,7 @@ import GridItem from "./grid-items/grid-item";
 import ProfileBox from "./grid-items/profile-box";
 import SocialBox12 from "./grid-items/social-box-12";
 import SocialBox21 from "./grid-items/social-box-21";
+import SkillsBox from "./grid-items/skills-box";
 
 const RightPanel = () => {
   return (
@@ -20,6 +21,8 @@ const RightPanel = () => {
               <SocialBox12 item={item} />
             ) : item.type === "social21" ? (
               <SocialBox21 item={item} />
+            ) : item.type === "skills" ? (
+              <SkillsBox item={item} />
             ) : (
               <div>Unknown item</div>
             )}

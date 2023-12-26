@@ -1,7 +1,12 @@
 import { LucideIcon, Mail, QrCode } from "lucide-react";
 
 export type GridItemLayout = "1x2" | "2x1" | "2x2" | "2x4"; // First number is width, second is height
-export type GridItemType = "social12" | "social21" | "project" | "profile";
+export type GridItemType = "social12" | "social21" | "project" | "profile" | "skills";
+
+export interface SkillCategory {
+  subtitle: string;
+  items: string[];
+}
 
 export interface GridItemInterface {
   layout: GridItemLayout;
@@ -21,6 +26,7 @@ export interface GridItemInterface {
     buttonColor?: string;
     buttonText?: string;
   };
+  skills?: SkillCategory[];
 }
 
 export const profileConfig = {
@@ -86,7 +92,19 @@ export const bentoBoxes: GridItemInterface[] = [
   },
   {
     layout: "2x4",
-    type: "project",
+    type: "skills",
+    title: "Skills",
+    skills: 
+    [
+      {
+        subtitle: "Frontend",
+        items:["Ract", "Typescript"],
+      },
+      {
+        subtitle: "Backend",
+        items:["Spring"],
+      },
+    ]
   },
   {
     layout: "2x1",
