@@ -26,7 +26,7 @@ const ProjectBox = ({ item }: { item: GridItemInterface }) => {
               {item.title}
             </div>
           </div>
-          <div className="">
+          <div>
             <Button button={item.button ?? {}}/>
           </div>
         </div>

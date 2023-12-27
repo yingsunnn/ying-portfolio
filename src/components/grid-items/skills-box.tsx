@@ -11,7 +11,7 @@ const SkillsBox = ({ item }: { item: GridItemInterface }) => {
             <div className="font-semibold line-clamp-1 mb-2">{skill.subtitle}</div>
             <div className="flex flex-wrap gap-3">
               {skill.items.map((item, index) => (
-                <div key={item} className="text-sm bg-zinc-100 dark:bg-zinc-600 rounded-2xl px-4 py-0.5">{item}</div>
+                <div key={item} className="text-xs bg-zinc-100 dark:bg-zinc-600 rounded-2xl px-4 py-0.5">{item}</div>
               ))}
             </div>
           </div>

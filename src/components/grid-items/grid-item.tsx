@@ -32,7 +32,7 @@ const GridItem = ({ size, children }: GridItemProps) => {
         variants({
           size,
           className:
-            "hover:dark:bg-neutral-800 hover:bg-neutral-50 duration-75 transition-colors ease-in-out",
+            "hover:dark:bg-neutral-700 hover:bg-neutral-50 duration-75 transition-colors ease-in-out",
         })
       )}
     >

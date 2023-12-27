@@ -3,17 +3,10 @@ import React from "react";
 import Image from "next/image";
 import { cn } from "@/utils/cn";
 import { LucideProps, Mail } from "lucide-react";
+import IconButton from "../icon-button";
 
 const SocialBox12 = ({ item }: { item: GridItemInterface }) => {
-  function Icon({
-    icon: Icon,
-    size = 16,
-  }: {
-    icon: React.FC<LucideProps>;
-    size: number;
-  }) {
-    return <Icon size={size} />;
-  }
+  
 
   return (
     <div>
@@ -34,16 +27,7 @@ const SocialBox12 = ({ item }: { item: GridItemInterface }) => {
         <div className="text-sm text-neutral-500 dark:text-neutral-300">
           {item.social?.socialId}
         </div>
-        <button
-          type="button"
-          className={cn(
-            "focus:ring-1 focus:outline-none rounded-md p-1 text-center inline-flex items-center",
-            item.button?.color
-          )}
-        >
-          <Icon icon={item.button?.icon ?? Mail} size={16} />
-          <span className="sr-only">Send Email</span>
-        </button>
+        <IconButton button={item.button ?? {}}/>
       </div>
     </div>
   );

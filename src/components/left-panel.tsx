@@ -47,9 +47,9 @@ const LeftPanel = () => {
           <ThemeToggle />
         </div>
         {/* Footer */}
-        <div className="hidden mt-6 xl:flex">
+        {/* <div className="hidden mt-6 xl:flex">
           <Footer />
-        </div>
+        </div> */}
       </div>
     </div>
   );
