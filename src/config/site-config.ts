@@ -65,7 +65,7 @@ export const bentoBoxes: GridItemInterface[] = [
     button: {
       color: "bg-red-500",
       icon: Mail,
-      url: "mailto:${siteConfig.email}",
+      url: "mailto:sco.suen@gmail.com",
     },
   },
   {
