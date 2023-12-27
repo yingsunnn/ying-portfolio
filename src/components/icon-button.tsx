@@ -13,9 +13,16 @@ const IconButton = ({ button }: { button: Button }) => {
     return <Icon size={size} />;
   }
 
+  const onClick = () => {
+    if (button.url?.startsWith("mailto:")) {
+      window.open(button.url, "_blank");
+    }
+  };
+
   return (
     <button
       type="button"
+      onClick={() => onClick()}
       className="
       bg-neutral-600
       text-white

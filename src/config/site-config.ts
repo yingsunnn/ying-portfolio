@@ -28,7 +28,6 @@ export interface GridItemInterface {
   icon?: string;
   social?: {
     socialId?: string;
-    socialLink?: string;
     following?: string;
     followers?: string;
     connections?: string;
@@ -62,11 +61,11 @@ export const bentoBoxes: GridItemInterface[] = [
     icon: "/email.png",
     social: {
       socialId: "sco.suen@gmail.com",
-      socialLink: "`mailto:${siteConfig.email}`",
     },
     button: {
       color: "bg-red-500",
       icon: Mail,
+      url: "mailto:${siteConfig.email}",
     },
   },
   {
@@ -89,7 +88,6 @@ export const bentoBoxes: GridItemInterface[] = [
     icon: "/github.png",
     social: {
       socialId: "@yingsunnn",
-      socialLink: "https://github.com/yingsunnn",
       followers: "5",
       following: "8",
     },
@@ -150,7 +148,6 @@ export const bentoBoxes: GridItemInterface[] = [
     icon: "/linkedin.png",
     social: {
       socialId: "@Ying",
-      socialLink: "https://www.linkedin.com/in/ying-sun-85b217a9/",
       connections: "52",
     },
     button: {
