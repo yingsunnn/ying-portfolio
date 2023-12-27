@@ -38,10 +38,10 @@ const SocialBox12 = ({ item }: { item: GridItemInterface }) => {
           type="button"
           className={cn(
             "focus:ring-1 focus:outline-none rounded-md p-1 text-center inline-flex items-center",
-            item.button?.buttonColor
+            item.button?.color
           )}
         >
-          <Icon icon={item.button?.buttonIcon ?? Mail} size={16} />
+          <Icon icon={item.button?.icon ?? Mail} size={16} />
           <span className="sr-only">Send Email</span>
         </button>
       </div>

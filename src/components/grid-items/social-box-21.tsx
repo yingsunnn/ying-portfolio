@@ -4,6 +4,7 @@ import { GridItemInterface } from "@/config/site-config";
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import { cn } from "@/utils/cn";
+import Button from "../button";
 
 const SocialBox21 = ({ item }: { item: GridItemInterface }) => {
   return (
@@ -47,24 +48,8 @@ const SocialBox21 = ({ item }: { item: GridItemInterface }) => {
             </div>
           )}
         </div>
-        <div className="w-full text-right">
-          <button
-            type="button"
-            className={`
-              mt-2 
-              focus:ring-1 
-              focus:outline-none 
-              font-medium 
-              rounded-lg 
-              text-sm
-              px-2 
-              py-1 
-              text-center 
-              inline-flex 
-              items-center`}
-          >
-            {item.button?.buttonText}
-          </button>
+        <div className="w-full mt-2 text-right">
+          <Button button={item.button ?? {}}/>
         </div>
       </div>
     </div>

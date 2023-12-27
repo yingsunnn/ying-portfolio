@@ -13,6 +13,13 @@ export interface SkillCategory {
   items: string[];
 }
 
+export interface Button {
+  icon?: LucideIcon;
+  color?: string;
+  text?: string;
+  url?: string;
+}
+
 export interface GridItemInterface {
   layout: GridItemLayout;
   type: GridItemType;
@@ -26,11 +33,7 @@ export interface GridItemInterface {
     followers?: string;
     connections?: string;
   };
-  button?: {
-    buttonIcon?: LucideIcon;
-    buttonColor?: string;
-    buttonText?: string;
-  };
+  button?: Button;
   skills?: SkillCategory[];
 }
 
@@ -62,8 +65,8 @@ export const bentoBoxes: GridItemInterface[] = [
       socialLink: "`mailto:${siteConfig.email}`",
     },
     button: {
-      buttonColor: "bg-red-500",
-      buttonIcon: Mail,
+      color: "bg-red-500",
+      icon: Mail,
     },
   },
   {
@@ -75,8 +78,8 @@ export const bentoBoxes: GridItemInterface[] = [
       socialId: "@scosuen",
     },
     button: {
-      buttonColor: "bg-green-600",
-      buttonIcon: QrCode,
+      color: "bg-green-600",
+      icon: QrCode,
     },
   },
   {
@@ -91,8 +94,8 @@ export const bentoBoxes: GridItemInterface[] = [
       following: "8",
     },
     button: {
-      buttonColor: "bg-zinc-800",
-      buttonText: "Go To My Github",
+      text: "Go To My Github",
+      url: "https://github.com/yingsunnn"
     },
   },
   {
@@ -102,11 +105,41 @@ export const bentoBoxes: GridItemInterface[] = [
     skills: [
       {
         subtitle: "Frontend",
-        items: ["Ract", "Typescript"],
+        items: [
+          "NextJS",
+          "Ract",
+          "Typescript",
+          "Tailwind",
+          "Shadcn UI",
+          "Vercel AI",
+          "Prisma",
+          "Stripe",
+          "Clerk",
+          "Crisp",
+        ],
       },
       {
         subtitle: "Backend",
-        items: ["Spring"],
+        items: [
+          "Java",
+          "AWS",
+          "Spring Boot",
+          "Spring Cloud",
+          "Spring Data JPA",
+          "Dropwizard",
+          "Swagger",
+          "JaCoCo",
+          "Lombok",
+          "Jackson",
+          "Liquibase",
+          "MySQL",
+          "PostgreSQL",
+          "Oracle",
+          "Redis",
+          "MongoDB",
+          "PlanetScale",
+          "Pinecone",
+        ],
       },
     ],
   },
@@ -121,8 +154,19 @@ export const bentoBoxes: GridItemInterface[] = [
       connections: "52",
     },
     button: {
-      buttonColor: "bg-sky-600",
-      buttonText: "Go To My Linkedin",
+      text: "Go To My Linkedin",
+      url: "https://www.linkedin.com/in/ying-sun-85b217a9/",
+    },
+  },
+  {
+    layout: "2x4",
+    type: "project",
+    title: "SketchyBar Plugins",
+    icon: "/sketchybar.jpg",
+    description: "Enhance Mac with my SketchyBar plugins: sleek visuals, real-time system stats, current space, and active app at a glance. Elevate style and functionality in a minimalist menu bar.",
+    button: {
+      text: "Github page",
+      url: "https://github.com/yingsunnn/dotfiles",
     },
   },
   {
@@ -130,18 +174,21 @@ export const bentoBoxes: GridItemInterface[] = [
     type: "project",
     title: "AI Note",
     icon: "/ai-chatbot.jpg",
-    description: " aiais daksd flkasnmf lkasdnf lksn"
+    description: "Smart note-taking made easy. Organize, sync, and interact with AI-driven Q&A. Elevate productivity seamlessly.",
+    button: {
+      text: "Github page",
+      url: "https://github.com/yingsunnn/ai-chatbot",
+    },
   },
   {
     layout: "2x6",
     type: "project",
-    title: "AI AssA",
-    icon: "/ai-assa.jpg",
-    description: "sdfsd sd sd fsd fsd sd fsd "
-  },
-  {
-    layout: "2x4",
-    type: "project",
-    title: "",
+    title: "AI SaaS",
+    icon: "/ai-saas.jpg",
+    description: "Explore the limitless potential of AI with our subscription-based SAAS platform. Engage in real-time conversations, generate code, craft stunning images, compose music, and produce captivating videos. Elevate your creative journey with our advanced features. Subscribe now and embark on a new era of AI innovation.",
+    button: {
+      text: "Github page",
+      url: "https://github.com/yingsunnn/ai-saas",
+    },
   },
 ];
