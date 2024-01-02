@@ -92,8 +92,36 @@ export const bentoBoxes: GridItemInterface[] = [
       following: "8",
     },
     button: {
-      text: "Go To My Github",
-      url: "https://github.com/yingsunnn"
+      text: "Go to my Github",
+      url: "https://github.com/yingsunnn",
+    },
+  },
+  {
+    layout: "2x1",
+    type: "social21",
+    title: "YouTube",
+    icon: "/youtube.png",
+    social: {
+      socialId: "@yingsunnn",
+      followers: "0",
+    },
+    button: {
+      text: "Go to my YouTube",
+      url: "/",
+    },
+  },
+  {
+    layout: "2x1",
+    type: "social21",
+    title: "Linkedin",
+    icon: "/linkedin.png",
+    social: {
+      socialId: "@Ying",
+      connections: "52",
+    },
+    button: {
+      text: "Go to my Linkedin",
+      url: "https://www.linkedin.com/in/ying-sun-85b217a9/",
     },
   },
   {
@@ -142,25 +170,15 @@ export const bentoBoxes: GridItemInterface[] = [
     ],
   },
   {
-    layout: "2x1",
-    type: "social21",
-    title: "Linkedin",
-    icon: "/linkedin.png",
-    social: {
-      socialId: "@Ying",
-      connections: "52",
-    },
-    button: {
-      text: "Go To My Linkedin",
-      url: "https://www.linkedin.com/in/ying-sun-85b217a9/",
-    },
-  },
-  {
     layout: "2x4",
     type: "project",
     title: "SketchyBar Plugins",
     icon: "/sketchybar.jpg",
-    description: "Enhance Mac with my SketchyBar plugins: sleek visuals, real-time system stats, current space, and active app at a glance. Elevate style and functionality in a minimalist menu bar.",
+    description:
+      `Enhance Mac with my SketchyBar plugins: 
+      sleek visuals, real-time system stats, 
+      current space, and active app at a glance.
+      Elevate style and functionality in a minimalist menu bar.`,
     button: {
       text: "Github page",
       url: "https://github.com/yingsunnn/dotfiles",
@@ -171,7 +189,8 @@ export const bentoBoxes: GridItemInterface[] = [
     type: "project",
     title: "AI Note",
     icon: "/ai-chatbot.jpg",
-    description: "Smart note-taking made easy. Organize, sync, and interact with AI-driven Q&A. Elevate productivity seamlessly.",
+    description: `Smart note-taking made easy. 
+      Organize, sync, and interact with AI-driven Q&A. Elevate productivity seamlessly.`,
     button: {
       text: "Github page",
       url: "https://github.com/yingsunnn/ai-chatbot",
@@ -182,7 +201,10 @@ export const bentoBoxes: GridItemInterface[] = [
     type: "project",
     title: "AI SaaS",
     icon: "/ai-saas.jpg",
-    description: "Explore the limitless potential of AI with our subscription-based SAAS platform. Engage in real-time conversations, generate code, craft stunning images, compose music, and produce captivating videos. Elevate your creative journey with our advanced features. Subscribe now and embark on a new era of AI innovation.",
+    description: `Explore the limitless potential of AI with my subscription-based SAAS platform. 
+      Engage in real-time conversations, generate code, craft stunning images, 
+      compose music, and produce captivating videos. 
+      Elevate your creative journey with advanced features.`,
     button: {
       text: "Github page",
       url: "https://github.com/yingsunnn/ai-saas",

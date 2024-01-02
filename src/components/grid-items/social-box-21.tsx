@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { GridItemInterface } from "@/config/site-config";
 import React, { useEffect, useState } from "react";
@@ -28,28 +28,30 @@ const SocialBox21 = ({ item }: { item: GridItemInterface }) => {
         </div>
       </div>
       <div>
-        <div className="text-right">
+        <div className="flex flex-row gap-3 justify-end">
           {item.social?.connections && (
             <div className="text-sm text-neutral-500 dark:text-neutral-300">
               Connections:{" "}
               <span className="font-semibold">{item.social?.connections}</span>
             </div>
           )}
+
           {item.social?.followers && (
-            <div className="flex flex-row gap-3 ">
-              <div className="text-sm text-neutral-500 dark:text-neutral-300">
-                Followers:{" "}
-                <span className="font-semibold">{item.social?.followers}</span>
-              </div>
-              <div className="text-sm text-neutral-500 dark:text-neutral-300">
-                Following:{" "}
-                <span className="font-semibold">{item.social?.following}</span>
-              </div>
+            <div className="text-sm text-neutral-500 dark:text-neutral-300">
+              Followers:{" "}
+              <span className="font-semibold">{item.social?.followers}</span>
+            </div>
+          )}
+
+          {item.social?.following && (
+            <div className="text-sm text-neutral-500 dark:text-neutral-300">
+              Following:{" "}
+              <span className="font-semibold">{item.social?.following}</span>
             </div>
           )}
         </div>
         <div className="w-full mt-2 text-right">
-          <Button button={item.button ?? {}}/>
+          <Button button={item.button ?? {}} />
         </div>
       </div>
     </div>
