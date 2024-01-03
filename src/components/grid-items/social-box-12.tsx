@@ -6,11 +6,9 @@ import { LucideProps, Mail } from "lucide-react";
 import IconButton from "../icon-button";
 
 const SocialBox12 = ({ item }: { item: GridItemInterface }) => {
-  
-
   return (
     <div>
-      <div className="flex flex-row items-center gap-5">
+      <div className="flex flex-row items-center lg:gap-5 gap-2">
         <div>
           <Image
             priority
@@ -27,7 +25,9 @@ const SocialBox12 = ({ item }: { item: GridItemInterface }) => {
         <div className="text-sm text-neutral-500 dark:text-neutral-300">
           {item.social?.socialId}
         </div>
-        <IconButton button={item.button ?? {}}/>
+      </div>
+      <div className="mt-3">
+        <IconButton button={item.button ?? {}} />
       </div>
     </div>
   );

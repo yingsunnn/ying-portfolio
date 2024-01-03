@@ -3,13 +3,12 @@
 import { GridItemInterface } from "@/config/site-config";
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
-import { cn } from "@/utils/cn";
 import Button from "../button";
 
 const SocialBox21 = ({ item }: { item: GridItemInterface }) => {
   return (
     <div className="flex flex-row items-center justify-between ">
-      <div className="flex flex-row gap-5">
+      <div className="flex flex-row gap-3 lg:gap-5">
         <div>
           <Image
             priority

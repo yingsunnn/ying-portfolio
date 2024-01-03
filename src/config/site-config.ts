@@ -52,7 +52,9 @@ export const bentoBoxes: GridItemInterface[] = [
     type: "profile",
     title: "🚀 AI-passionate Full Stack Developer",
     description:
-      "Hi there! I'm a dedicated Full Stack Developer with a strong interest in the fascinating world of Artificial Intelligence. Thriving on complex challenges, I'm an innovator with a knack for crafting solutions. Let's create something extraordinary together!",
+      `Hi there! I'm a dedicated Full Stack Developer with a strong interest in the fascinating
+       world of Artificial Intelligence.
+       Let's create something extraordinary together!`,
   },
   {
     layout: "1x2",
@@ -89,7 +91,7 @@ export const bentoBoxes: GridItemInterface[] = [
     social: {
       socialId: "@yingsunnn",
       followers: "5",
-      following: "8",
+      // following: "8",
     },
     button: {
       text: "Go to my Github",
