@@ -27,7 +27,10 @@ const ProjectBox = ({ item }: { item: GridItemInterface }) => {
             </div>
           </div>
           <div>
-            <Button button={item.button ?? {}}/>
+            <div className="gap-4 flex flex-row">
+              {item.demoButton && <Button button={item.demoButton ?? {}} />}
+              <Button button={item.button ?? {}} />
+            </div>
           </div>
         </div>
         <div className="mt-6 text-sm text-neutral-500 dark:text-neutral-300 line-clamp-8">

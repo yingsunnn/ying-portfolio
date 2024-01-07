@@ -33,6 +33,7 @@ export interface GridItemInterface {
     connections?: string;
   };
   button?: Button;
+  demoButton?: Button;
   skills?: SkillCategory[];
 }
 
@@ -211,5 +212,9 @@ export const bentoBoxes: GridItemInterface[] = [
       text: "Github page",
       url: "https://github.com/yingsunnn/ai-saas",
     },
+    demoButton: {
+      text: "Demo",
+      url: "https://ai-saas-mu-indol.vercel.app/",
+    }
   },
 ];
